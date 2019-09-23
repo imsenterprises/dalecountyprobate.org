@@ -1,0 +1,61 @@
+apiVersion: apps/v1beta2
+kind: Deployment
+metadata:
+  name: demo-county-site-green
+  namespace: default
+  labels:
+    app: demo-county-site-green
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: demo-county-site-green
+  template:
+    metadata:
+      labels:
+        app: demo-county-site-green
+    spec:
+      imagePullSecrets:
+      - name: ims-registry
+      containers:
+      - image: docker.serve-dns.com/ims/demo-county-site:ims-green
+        name: site
+        resources:
+          requests:
+            cpu: 0.1
+            memory: 100M
+---
+kind: Service
+apiVersion: v1
+metadata:
+  name: demo-county-site-green
+  namespace: default
+spec:
+  selector:
+    app: demo-county-site-green
+  ports:
+  - protocol: TCP
+    port: 80
+    targetPort: 80
+---
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  annotations:
+    certmanager.k8s.io/cluster-issuer: "letsencrypt-prod"
+    certmanager.k8s.io/acme-challenge-type: http01
+    # nginx.ingress.kubernetes.io/rewrite-target: /
+  name: demo-county-site-green
+  namespace: default
+spec:
+  tls:
+  - hosts:
+    - demo-county-site-green.wg0.dev
+    secretName: demo-county-green-tls-secret
+  rules:
+  - host: demo-county-site-green.wg0.dev
+    http:
+      paths:
+      - backend:
+          serviceName: demo-county-site-green
+          servicePort: 80

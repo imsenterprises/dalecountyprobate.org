@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Lorem-ipsums on Demo County Site</title>
+    <link>/lorem-ipsum/</link>
+    <description>Recent content in Lorem-ipsums on Demo County Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 07 Mar 2019 09:44:55 -0600</lastBuildDate>
+    
+	<atom:link href="/lorem-ipsum/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Lorem Ipsum - 1</title>
+      <link>/lorem-ipsum/lorem-1/</link>
+      <pubDate>Thu, 07 Mar 2019 09:44:55 -0600</pubDate>
+      
+      <guid>/lorem-ipsum/lorem-1/</guid>
+      <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In egestas finibus orci. Aliquam pulvinar vitae diam et egestas. Nam pellentesque, nisl in molestie vulputate, leo purus tristique felis, ultricies auctor mi erat quis ex. Integer finibus hendrerit finibus. Fusce neque mi, pellentesque sed aliquam at, eleifend vel nulla. Nunc bibendum arcu at leo fermentum, non molestie est ornare. Sed id varius elit.
+Aenean faucibus aliquet ipsum at dictum. Nullam nec tortor et tortor mattis laoreet.</description>
+    </item>
+    
+    <item>
+      <title>Lorem Ipsum - 2</title>
+      <link>/lorem-ipsum/lorem-2/</link>
+      <pubDate>Thu, 07 Mar 2019 09:44:55 -0600</pubDate>
+      
+      <guid>/lorem-ipsum/lorem-2/</guid>
+      <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In egestas finibus orci. Aliquam pulvinar vitae diam et egestas. Nam pellentesque, nisl in molestie vulputate, leo purus tristique felis, ultricies auctor mi erat quis ex. Integer finibus hendrerit finibus. Fusce neque mi, pellentesque sed aliquam at, eleifend vel nulla. Nunc bibendum arcu at leo fermentum, non molestie est ornare. Sed id varius elit.
+Aenean faucibus aliquet ipsum at dictum. Nullam nec tortor et tortor mattis laoreet.</description>
+    </item>
+    
+    <item>
+      <title>Lorem Ipsum - 3</title>
+      <link>/lorem-ipsum/lorem-3/</link>
+      <pubDate>Thu, 07 Mar 2019 09:44:55 -0600</pubDate>
+      
+      <guid>/lorem-ipsum/lorem-3/</guid>
+      <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In egestas finibus orci. Aliquam pulvinar vitae diam et egestas. Nam pellentesque, nisl in molestie vulputate, leo purus tristique felis, ultricies auctor mi erat quis ex. Integer finibus hendrerit finibus. Fusce neque mi, pellentesque sed aliquam at, eleifend vel nulla. Nunc bibendum arcu at leo fermentum, non molestie est ornare. Sed id varius elit.
+Aenean faucibus aliquet ipsum at dictum. Nullam nec tortor et tortor mattis laoreet.</description>
+    </item>
+    
+  </channel>
+</rss>

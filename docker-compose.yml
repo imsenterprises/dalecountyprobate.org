@@ -1,0 +1,11 @@
+version: '3'
+services:
+  hugo:
+    image: cibuilds/hugo
+    command: hugo server -D --bind=0.0.0.0
+    working_dir: /app
+    volumes:
+    - ./:/app
+    ports:
+    - 1313:1313
+    

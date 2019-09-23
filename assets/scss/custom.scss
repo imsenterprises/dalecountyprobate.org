@@ -1,0 +1,35 @@
+.resp {
+  > article {
+    display: flex;
+    header {
+      font-weight: bold;
+      flex: 0 0 150px;
+    }
+    .contents {
+      flex: 1;
+    }
+  }
+}
+
+section.alpha-list {
+  + ol {
+    list-style-type: lower-alpha;
+  }
+}
+
+.center {
+  text-align: center;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.banner {
+  $banner-color: #0f1834;
+  background-color: $banner-color;
+  background-size: contain;
+  background-position-x: right;
+  // border-left: 10px solid;
+  // border-image: linear-gradient( to left, $banner-color, transparent ) 0 100%;
+}

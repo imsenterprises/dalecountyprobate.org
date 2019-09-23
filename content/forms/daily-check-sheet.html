@@ -1,0 +1,136 @@
+---
+title: Daily Check Sheet
+---
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.17/vue.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
+<div id="app">
+  <div class="item" v-for="item of combinedItems">
+    <div class="spacer" v-if="item.spacer">&nbsp;</div>
+    <label class="label" v-if="typeof item.label != 'undefined'">{{ item.label }}</label>
+    <div class="value" v-if="typeof item.value != 'undefined'"><input type="number" v-model="item.value"></div>
+    <div class="price" v-if="item.price">
+      <input type="number" class="amount" v-model="item.amount">
+      @ {{ item.price | currency }}
+    </div>
+    <div class="roValue" v-if="item.price">
+      <input type="number" readonly :value="item.amount * item.price">
+    </div>
+    <div class="roValue" v-if="item.computedValue">
+      <input type="number" readonly :value="$root[item.computedValue]">
+    </div>
+  </div>
+</div>
+<style>
+.item {
+  display: flex;
+}
+.item > * {
+  flex: 1;
+}
+.item .spacer {
+  flex: 0 1 100px;
+}
+.item input[type=number] {
+  text-align: right;
+  border: 1px solid #eee;
+  border-radius: 5px;
+  box-sizing: border-box
+}
+.item input[readonly] {
+  background-color: lightgray;
+}
+.price {
+  width: 240px;
+}
+.price .amount {
+  width: 4em;
+}
+.roValue, .value {
+  flex: 0 0 240px;
+}
+.roValue > input,
+.value > input {
+  width: 8em;
+}
+</style>
+<script>
+const vue = new Vue({
+  el: '#app',
+  data() {
+    return {
+      mainItems: [
+        { label: 'Deed Tax', value: 0 },
+        { label: 'Mortgage Tax', value: 0 },
+        { label: 'Mineral Tax', value: 0 },
+        { label: 'UCC Tax', value: 0 },
+        { label: 'Probate Judge Fee', value: 0 },
+        { label: 'Corporation', value: 0 },
+        { label: 'Notary', value: 0 },
+        { label: 'Extra Indexes', value: 0 },
+        { label: 'Probate Judge', value: 0 },
+        { label: 'Extra Indexes', value: 0 },
+        { label: 'Copies', value: 0 },
+        { label: 'Marriages', value: 0 },
+        { spacer: true },
+        { label: 'Driver\'s License', value: 0 },
+        { label: 'Hunting & Fishing License', value: 0 },
+        { spacer: true },
+        { header: 'Boats' },
+        { label: 'Class I', amount: 0, price: 20 },
+        { label: 'Class II', amount: 0, price: 25 },
+        { label: 'Class III', amount: 0, price: 75 },
+        { label: 'Transfers', amount: 0, price: 5 },
+        { label: 'Replacements', amount: 0, price: 5 },
+        { label: 'Sales Tax', value: 0 },
+        { spacer: true },
+        { label: 'Business License', value: 0 },
+        { label: 'Total', computedValue: 'mainTotal', spacer: true },
+      ],
+      amountItems: [
+        { label: 'Checks', value: 0, spacer: true },
+        { label: 'Cash', value: 0, spacer: true },
+        { label: 'Cards', value: 0, spacer: true },
+        { label: 'Total', computedValue: 'amountTotal', spacer: true },
+      ],
+      calcedItems: [
+        { label: 'Less Cards', computedValue: 'lessCards', spacer: true },
+        { label: 'Total Net Deposited', value: 0, spacer: true },
+        { label: 'Cash Over Or Short', computedValue: 'cashDiff', spacer: true },
+      ]
+    }
+  },
+  computed: {
+    combinedItems() {
+      return [...this.mainItems, ...this.amountItems,...this.calcedItems]
+    },
+    mainTotal() {
+      return this.total(this.mainItems)
+    },
+    amountTotal() {
+      return this.total(this.amountItems)
+    },
+    lessCards() {
+      const cardsItem = this.amountItems.find(i => i.label === 'Cards')
+      return this.amountTotal - cardsItem.value
+    },
+    cashDiff() {
+      const netItem = this.calcedItems.find(i => i.label === 'Total Net Deposited')
+      return this.lessCards - netItem.value
+    }
+  },
+  methods: {
+    total(items) {
+      return items.reduce((total, item) => {
+        if (item.value) total += parseInt(item.value)
+        if (item.amount) total += parseInt(item.amount) * item.price
+        return total
+      }, 0)
+    }
+  },
+  filters: {
+    currency (value) {
+      return `$${value.toFixed(2)}`
+    }
+  }
+})
+</script>

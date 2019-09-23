@@ -1,0 +1,6 @@
+[submodule "themes/ims-red"]
+	path = themes/ims-red
+	url = git@github.com:imsenterprises/hugo-theme-red
+[submodule "themes/ims-red2"]
+	path = themes/ims-red2
+	url = git@github.com:imsenterprises/hugo-theme-red2

@@ -1,0 +1,20 @@
+baseURL: ""
+languageCode: "en-us"
+title: "Dale County Probate"
+theme: "ims-red2"
+
+canonifyurls: true
+enableEmoji: true
+#enableGitInfo: true
+
+permalinks:
+  posts: /:year/:month/:title/
+
+params:
+  county: Dale
+  title: Dale County Probate
+  customScss:
+  - scss/custom.scss
+
+menu:
+  main: []
