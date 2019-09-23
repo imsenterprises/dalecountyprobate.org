@@ -1,0 +1,23 @@
+{{ $currentPage := . }}
+<div id="menu">
+  <ul class="menu-list">
+    {{ range .Site.Menus.main }}
+    <li class="menu-item top menu-has-children{{ if $currentPage.IsMenuCurrent "main" . }} active{{ end }}">
+      {{ if .URL }}
+      <a href="{{ .URL }}">{{ .Pre }}{{ .Name }}</a>
+      {{ else }}
+      <span>{{ .Pre }}{{ .Name }}</span>
+      {{ end }}
+    </li>
+    {{ if .HasChildren }}
+      {{ if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }}
+        {{ range .Children }}
+        <li class="menu-item child{{ if $currentPage.IsMenuCurrent "main" . }} active{{ end }}">
+          <a href="{{ .URL }}">{{ .Pre }}{{ .Name }}</a>
+        </li>
+        {{ end }}
+      {{ end }}
+    {{ end }}
+    {{ end }}
+  </ul>
+</div>

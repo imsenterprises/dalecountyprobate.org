@@ -1,0 +1,15 @@
+{{ partial "header.html" . }}
+
+<div class="content">
+	<header>
+	  {{ .Title }}
+	</header>
+
+	<content>
+	  {{ range .Data.Pages }}
+	    {{ .Render "summary"}}
+	  {{ end }}
+	</content>
+</div>
+
+{{ partial "footer.html" . }}

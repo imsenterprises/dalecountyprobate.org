@@ -1,0 +1,48 @@
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="{{ if .IsNode }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ else }}{{ with .Description }}{{ . | truncate 100 }}{{ end }}{{ end }}">
+  <meta name="og:title" content="{{ .Title }}">
+  <meta name="section" content="{{ .Section }}">
+  <meta name="currentSection" content="{{ .CurrentSection }}">
+  {{ with .GitInfo }}
+  <meta name="git_info:hash" content="{{ .Hash }}">
+  <meta name="git_info:author_name" content="{{ .AuthorName }}">
+  {{ end }}
+  {{ if eq .Section "posts" }}
+  <meta name="og:type" content="article">
+  {{ if .PublishDate }}<meta name="article:published_time" content="{{ .PublishDate }}">{{ end }}
+  {{ if .ExpiryDate }}<meta name="article:expiration_time" content="{{ .ExpiryDate }}">{{ end }}
+  {{ if .Lastmod }}<meta name="article:modified_time" content="{{ .Lastmod }}">{{ end }}
+  {{ if .Params.Tags }}<meta name="article:tags" content="{{ .Params.Tags }}">{{ end }}
+  {{ else }}
+  <meta name="og:type" content="website">
+  {{ end }}
+  <meta name="og:url" content="{{ .Permalink }}">
+  <meta name="og:site_name" content="{{ .Site.Title }}">
+  <meta name="og:description" content="{{ if .Description }}{{ .Description }}{{ else }}{{ .Content }}{{ end }}">
+  {{.Hugo.Generator}}
+
+  <title>{{ if .IsHome }}{{ .Title }}{{ else }}{{ .Title }} &middot; {{ .Site.Title }}{{ end }}</title>
+  {{ $style := resources.Get "scss/main.scss" | resources.ToCSS | resources.Minify | resources.Fingerprint }}
+  <link rel="stylesheet" href="{{ $style.Permalink }}" defer>
+  <link rel="stylesheet" href="/css/font-awesome.min.css" defer>
+
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Noto+Serif|Tangerine" rel="stylesheet" type="text/css" defer>
+
+  <!-- RSS -->
+  {{ if .RSSLink }}
+  <link rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" href="{{ .RSSLink }}" />
+  {{ end }}
+
+  {{ range .Site.Params.customCss }}
+    <link rel="stylesheet" href="{{ . }}">
+  {{ end }}
+  {{ range .Site.Params.customScss }}
+  {{ $style := resources.Get . | resources.ToCSS | resources.Minify | resources.Fingerprint }}
+  <link rel="stylesheet" href="{{ $style.Permalink }}" defer>
+  {{ end }}
+  {{ range .Site.Params.customJs }}
+    <script src="{{ . }}"></script>
+  {{ end }}
+</head>

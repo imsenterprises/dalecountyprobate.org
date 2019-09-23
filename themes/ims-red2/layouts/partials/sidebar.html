@@ -1,0 +1,5 @@
+<div id="sidebar">
+  {{ $resource := resources.Get "img/judge.jpg" }}
+  {{ $image := $resource.Resize "160x" }}
+  <img src="{{ $image.RelPermalink }}" width="{{ $image.Width }}" height="{{ $image.Height }}" />
+</div>
