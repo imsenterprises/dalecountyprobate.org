@@ -66,6 +66,10 @@ section.alpha-list {
   background-color: $banner-color;
   background-size: contain;
   background-position-x: right;
+  flex-basis: 225px;
   // border-left: 10px solid;
   // border-image: linear-gradient( to left, $banner-color, transparent ) 0 100%;
+}
+#menu {
+  margin-top: 0;
 }
