@@ -1,3 +1,39 @@
+.text-center {
+  text-align: center;
+}
+.text-left {
+  text-align: left;
+}
+.text-right {
+  text-align: right;
+}
+  
+h1, h2, h3, h4, h5, h6 {
+  text-align: center;
+}
+
+$colors: red green blue black white gray grey;
+@each $color in $colors {
+  .#{$color} {
+    color: #{$color};
+  }
+}
+
+.home-title {
+  // font-family: 'Times New Roman', Times, serif;
+  font-weight: bold;
+  .header-1 {
+    font-size: 48pt;
+  }
+  .header-2 {
+    font-size: 24pt;
+  }
+}
+
+content.home {
+  text-align: justify;
+}
+
 .resp {
   > article {
     display: flex;
