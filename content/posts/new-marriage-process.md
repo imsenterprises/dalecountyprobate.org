@@ -1,7 +1,6 @@
 ---
 title: "New Marriage Process - Alabama Act 2019-340"
 date: 2019-08-27T11:42:55-05:00
-draft: true
 ---
 
 ### <span style="color: red">NEW</span> Marriage Process -  Alabama Act 2019-340

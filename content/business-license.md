@@ -1,7 +1,6 @@
 ---
 title: "Business License"
 date: 2019-09-27T09:58:26-05:00
-draft: true
 menu:
   main:
     pre: "<i class='fa fa-info fa-fw'></i>"

@@ -1,7 +1,6 @@
 ---
 title: "Precincts"
 date: 2019-09-27T10:16:03-05:00
-draft: true
 menu:
   main:
     pre: "<i class='fa fa-info fa-fw'></i>"

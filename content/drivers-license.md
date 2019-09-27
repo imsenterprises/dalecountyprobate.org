@@ -1,7 +1,6 @@
 ---
 title: "Driver's License"
 date: 2019-09-27T09:53:28-05:00
-draft: true
 menu:
   main:
     pre: "<i class='fa fa-info fa-fw'></i>"
