@@ -1,0 +1,10 @@
+<div class="banner">
+  <div class="county-header">
+  </div>
+
+  <div class="brand">
+  {{ with .Site.Params.brand }}
+    <a href="/">{{ . | safeHTML }}</a>
+  {{ end }}
+  </div>
+</div>
