@@ -13,8 +13,8 @@ State and County business license are issued by the Dale County Probate Judge’
 
 Business License Handbook: [www.revenue.alabama.gov](www.revenue.alabama.gov)
 
-Business License Application.pdf
+[Business License Application.pdf](/pdfs/BusinessLicenseApplication.pdf)
 
-Contractor Affidavit.pdf
+[Contractor Affidavit.pdf](/pdfs/ContractorAffidavit.pdf)
 
-Manufacturers Affidavit.pdf
+[Manufacturers Affidavit.pdf](/pdfs/ManufacturersAffidavit.pdf)

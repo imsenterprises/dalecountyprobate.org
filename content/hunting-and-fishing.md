@@ -31,6 +31,6 @@ Hunter Education card if born on or after August 1, 1977.
 To obtain more information click on link below.  
 [www.outdooralabama.com](www.outdooralabama.com)
 
-Physically Disabled Resident Application.pdf
+[Physically Disabled Resident Application.pdf](/pdfs/PhysicallyDisabledResidentApplication.pdf)
 
-College Student Hunting & Fishing Application.pdf
+[College Student Hunting & Fishing Application.pdf](/pdfs/CollegeStudentHuntingAndFishingApplication.pdf)

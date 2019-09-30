@@ -25,4 +25,4 @@ menu:
 * Your Address must be the same on your application and Identification or
   provide at least 2 proofs of residency.  
 
-[Notary Public Application.pdf](http://about:blank)
+[Notary Public Application.pdf](/pdfs/NotaryPublicApplication.pdf)
