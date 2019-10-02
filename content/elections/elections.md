@@ -21,7 +21,7 @@ menu:
 ## DALE COUNTY BOARD OF REGISTRARS<br />334-774-9038
 
 ## ONLINE VOTER REGISTRATION
-[https://www.alabamainteractive.org/sos/voter Registration/voterRegistration Welcome.action](https://www.alabamainteractive.org/sos/voter Registration/voterRegistration Welcome.action)
+[www.sos.alabama.gov/alabama-votes](www.sos.alabama.gov/alabama-votes)
 
 
 
