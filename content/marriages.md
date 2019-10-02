@@ -124,8 +124,8 @@ printed, once all required fields have been completed.   To access the new
 required forms and instructions online, at the Alabama Department of Public
 Health’s website: 
 [http://www.alabamapublichealth.gov/vitalrecords/marriage-certificates.html](http://www.alabamapublichealth.gov/vitalrecords/marriage-certificates.html) 
-You can also access the website via the link provided on the Calhoun County 
-website: [www.calhouncounty.org](https://www.calhouncounty.org)
+You can also access the website via the link provided on the Dale County 
+website: [www.dalecountyprobate.org](https://www.dalecountyprobate.org)
 
 PLEASE READ INSTRUCTIONS CAREFULLY!  DO NOT USE WHITE OUT OR CORRECTION TAPE ON 
 FORMS.
