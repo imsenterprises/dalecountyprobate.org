@@ -125,7 +125,7 @@ required forms and instructions online, at the Alabama Department of Public
 Health’s website: 
 [http://www.alabamapublichealth.gov/vitalrecords/marriage-certificates.html](http://www.alabamapublichealth.gov/vitalrecords/marriage-certificates.html) 
 You can also access the website via the link provided on the Calhoun County 
-website: [www.calhouncounty.org](www.calhouncounty.org)
+website: [www.calhouncounty.org](https://www.calhouncounty.org)
 
 PLEASE READ INSTRUCTIONS CAREFULLY!  DO NOT USE WHITE OUT OR CORRECTION TAPE ON 
 FORMS.
