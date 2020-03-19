@@ -19,6 +19,7 @@ menu:
 <div class="text-center header-2">SHARON A. MICHALIC</div>
 </header>
 <content class="home">
+
 Welcome to the Dale County Probate Office. This page has been developed to
 assist the citizens of Dale County and other interested parties with matters
 that come within the Probate Office’s areas of responsibilities. 
