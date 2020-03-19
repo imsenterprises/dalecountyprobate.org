@@ -23,6 +23,6 @@ p.m. they close for lunch at 12:00 p.m. and reopen at 1:00 p.m. at 202 S. Hwy
 Troopers Office Monday through Friday, from 8:30 a.m. until 4:30 p.m. 5679
 Montgomery Hwy, Dothan, AL 36303. 334-983-5616
 
-[www.alea.gov](www.alea.gov)  
-[www.alabamainteractive.org](www.alabamainteractive.org) for online renewal
+[www.alea.gov](https://www.alea.gov)  
+[www.alabamainteractive.org](https://www.alabamainteractive.org) for online renewal
  

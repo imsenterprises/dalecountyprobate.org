@@ -15,13 +15,13 @@ menu:
 | ----------------- | ----------------------------------------- |
 | March 3, 2020     |	Presidential Preference Primary Election  |
 | March 3, 2020     |	Statewide Primary Election                |
-| April 14, 2020    |	Primary Runoff Election                   |
+| March 31, 2020    |	Primary Runoff Election                   |
 | November 3, 2020  |	Statewide General Election                |
 
 ## DALE COUNTY BOARD OF REGISTRARS<br />334-774-9038
 
 ## ONLINE VOTER REGISTRATION
-[https://www.alabamainteractive.org/sos/voter Registration/voterRegistration Welcome.action](https://www.alabamainteractive.org/sos/voter Registration/voterRegistration Welcome.action)
+[www.sos.alabama.gov/alabama-votes](https://www.sos.alabama.gov/alabama-votes)
 
 
 

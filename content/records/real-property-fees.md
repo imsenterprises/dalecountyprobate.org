@@ -82,6 +82,6 @@ Documents should be legible originals or certified copies.
 
 Please call the Probate Office at 334-774-2754 if you have any questions or problems computing your fees, or any unusual documents to record.  Our goal is to record all documents without any unnecessary delays. 
 
-[www.syscononline.com/remote](www.syscononline.com/remote)  
+[www.syscononline.com/remote](http://www.syscononline.com/remote)  
 [https://alabama-form-rt-1.pdffiller.com](https://alabama-form-rt-1.pdffiller.com)
 
