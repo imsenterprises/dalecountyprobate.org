@@ -1,8 +1,6 @@
-ARG IMAGE=amd64/nginx
 FROM cibuilds/hugo as hugo
-WORKDIR /app
-COPY ./ .
+COPY --chown=circleci:circleci ./ .
 RUN hugo
 
-FROM $IMAGE
-COPY --from=hugo /app/public /usr/share/nginx/html
+FROM nginx
+COPY --from=hugo /home/circleci/project/public /usr/share/nginx/html
